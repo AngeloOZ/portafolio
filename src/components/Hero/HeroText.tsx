@@ -1,23 +1,34 @@
 import { TypeAnimation } from "react-type-animation"
+import { useTranslation } from 'next-i18next';
 
-export const HeroText = () => {
+import css from './styles/Hero.module.css'
+
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+
+}
+
+export const HeroText = ({ ...props }: Props) => {
+    const { t } = useTranslation();
+    console.log(t('common:greeting'))
+    
     return (
         <div>
-            <h1>
-                Hola <br />
-                Soy Angello Ordoñez
+            <h1 className={css.hero__text__title}>
+                {t('common:greeting')}<br />
+                I'm <span className="text-blue-500">Angello Ordonez</span>
             </h1>
             <TypeAnimation
                 preRenderFirstString={true}
+
                 sequence={[
                     500,
-                    'Soy un desarrollador frontend', // initially rendered starting point
+                    'I am Frontend Developer', // initially rendered starting point
                     1000,
-                    'Soy un desarrollador backend',
+                    'I am Backend Developer',
                     500,
                 ]}
                 speed={40}
-                style={{ fontSize: '2em' }}
+                className={css.hero__text__typing}
                 repeat={Infinity}
             />
         </div>

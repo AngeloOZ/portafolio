@@ -5,7 +5,11 @@ import { loadSlim } from "tsparticles-slim";
 
 import type { Container, Engine } from "tsparticles-engine";
 
-export const HeroParticles = () => {   
+interface Props {
+    className?: string;
+}
+
+export const HeroParticles = ({ className }: Props) => {
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadSlim(engine);
     }, []);
@@ -13,12 +17,13 @@ export const HeroParticles = () => {
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
         await container;
     }, []);
-    
+
     return (
         <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
+            className={className}
             options={{
                 background: {
                     color: {

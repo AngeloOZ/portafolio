@@ -1,11 +1,17 @@
-import { UIProvider } from '@/context'
-import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 
-export default function App({ Component, pageProps }: AppProps) {
+import { appWithTranslation } from 'next-i18next';
+
+import { UIProvider } from '@/context'
+
+import '@/styles/globals.css'
+
+function App({ Component, pageProps }: AppProps) {
   return (
     <UIProvider>
       <Component {...pageProps} />
     </UIProvider>
   )
 }
+
+export default appWithTranslation(App);
