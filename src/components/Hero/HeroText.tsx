@@ -1,5 +1,4 @@
 import { TypeAnimation } from "react-type-animation"
-import { useTranslation } from 'next-i18next';
 
 import css from './styles/Hero.module.css'
 
@@ -8,13 +7,12 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const HeroText = ({ ...props }: Props) => {
-    const { t } = useTranslation();
-    console.log(t('common:greeting'))
+
     
     return (
         <div>
             <h1 className={css.hero__text__title}>
-                {t('common:greeting')}<br />
+                Hello <br />
                 I'm <span className="text-blue-500">Angello Ordonez</span>
             </h1>
             <TypeAnimation
