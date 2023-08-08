@@ -1,8 +1,7 @@
 {
-    "heroText": {
+    "hero": {
         "saludo": "Hola 🙌",
         "nombre": "Soy Angello Ordoñez",
         "profesion": ["Desarrollador Web", "Desarrollador de Software", "Ingeniero de Software"]
-    },
-    "greeting": "Hola"
+    }
 }
