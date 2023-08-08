@@ -33,7 +33,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 
   return {
     props: {
-      info,
+      data: info,
     },
     revalidate: 10,
   };

@@ -4,13 +4,17 @@ import { UIProvider } from '@/context'
 
 import '@/styles/globals.css'
 import { NextUIProvider } from '@nextui-org/react'
+import { ContentProvider } from '@/context/Content'
 
 export default function App({ Component, pageProps }: AppProps) {
+
   return (
-    <NextUIProvider>
-      <UIProvider>
-        <Component {...pageProps} />
-      </UIProvider>
-    </NextUIProvider>
+    <ContentProvider data={pageProps.data}>
+      <NextUIProvider>
+        <UIProvider>
+          <Component {...pageProps} />
+        </UIProvider>
+      </NextUIProvider>
+    </ContentProvider>
   )
 }
