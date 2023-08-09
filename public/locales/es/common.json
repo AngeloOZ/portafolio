@@ -1,8 +1,53 @@
 {
-    "heroText": {
-        "saludo": "Hola 🙌",
-        "nombre": "Soy Angello Ordoñez",
-        "profesion": ["Desarrollador Web", "Desarrollador de Software", "Ingeniero de Software"]
+    "navbar": [
+        {
+            "name": "Inicio",
+            "url": "#home"
+        },
+        {
+            "name": "Sobre mi",
+            "url": "#about"
+        },
+        {
+            "name": "Servicios",
+            "url": "#services"
+        },
+        {
+            "name": "Portafolio",
+            "url": "#portfolio"
+        },
+        {
+            "name": "Contacto",
+            "url": "#contact"
+        }
+    ],
+    "hero": {
+        "greeting": "Hola 👋👋",
+        "name": "Soy Angello Ordoñez",
+        "profession": [
+            "Ingeniero de Software",
+            "Desarrollador Web",
+            "Desarrollador de Software"
+        ],
+        "avatar": "https://avatars.githubusercontent.com/u/43109895?v=4",
+        "socialMedia": [
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/angello.ordonez.5"
+            },
+            {
+                "name": "twitter",
+                "url": "https://twitter.com/angello_ordo"
+            },
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/angello_ordo/"
+            },
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/angello-ordonez/"
+            }
+        ]
     },
-    "greeting": "Hola"
+    "about": []
 }
