@@ -9,6 +9,13 @@
   padding: 0 100px;
 }
 
+.hero__navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .hero__particles {
   position: fixed;
   top: 0;

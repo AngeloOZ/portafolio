@@ -1,4 +1,5 @@
 import { TypeAnimation } from "react-type-animation"
+import { Button } from "@nextui-org/react";
 
 import css from './styles/Hero.module.css'
 
@@ -8,7 +9,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 
 export const HeroText = ({ ...props }: Props) => {
 
-    
+
     return (
         <div>
             <h1 className={css.hero__text__title}>
@@ -17,7 +18,6 @@ export const HeroText = ({ ...props }: Props) => {
             </h1>
             <TypeAnimation
                 preRenderFirstString={true}
-
                 sequence={[
                     500,
                     'I am Frontend Developer', // initially rendered starting point
@@ -29,6 +29,24 @@ export const HeroText = ({ ...props }: Props) => {
                 className={css.hero__text__typing}
                 repeat={Infinity}
             />
+            <Button color="primary" className="inline-block">
+                About me
+            </Button>
+            <div className="flex justify-evenly">
+                <Button isIconOnly color="primary" aria-label="Like">
+                    ICO
+                </Button>
+                <Button isIconOnly color="primary" aria-label="Like">
+                    ICO
+                </Button>
+                <Button isIconOnly color="primary" aria-label="Like">
+                    ICO
+                </Button>
+                <Button isIconOnly color="primary" aria-label="Like">
+                    ICO
+                </Button>
+            </div>
+            {/* <HeartIcon /> */}
         </div>
     )
 }
