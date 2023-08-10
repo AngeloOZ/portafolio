@@ -4,12 +4,7 @@ import css from './styles/Hero.module.css'
 
 import { HeroText, Navbar, HeroAvatar, HeroParticles } from '.';
 
-import { Hero as Herotype } from '@/interfaces';
-
-interface HeroProps {
-  readonly heroData: Herotype;
-}
-export const Hero = ({ heroData }: HeroProps) => {
+export const Hero = () => {
   return (
     <header className={css.hero}>
       <Navbar />

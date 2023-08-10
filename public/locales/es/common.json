@@ -25,27 +25,35 @@
         "greeting": "Hola 👋👋",
         "name": "Soy Angello Ordoñez",
         "profession": [
+            500,
             "Ingeniero de Software",
+            500,
             "Desarrollador Web",
-            "Desarrollador de Software"
+            500,
+            "Desarrollador de Software",
+            1000
         ],
         "avatar": "https://avatars.githubusercontent.com/u/43109895?v=4",
         "socialMedia": [
             {
                 "name": "facebook",
-                "url": "https://www.facebook.com/angello.ordonez.5"
+                "url": "https://www.facebook.com/angello.ordonez.5",
+                "icon": "facebook"
             },
             {
                 "name": "twitter",
-                "url": "https://twitter.com/angello_ordo"
+                "url": "https://twitter.com/angello_ordo",
+                "icon": "facebook"
             },
             {
                 "name": "instagram",
-                "url": "https://www.instagram.com/angello_ordo/"
+                "url": "https://www.instagram.com/angello_ordo/",
+                "icon": "facebook"
             },
             {
                 "name": "linkedin",
-                "url": "https://www.linkedin.com/in/angello-ordonez/"
+                "url": "https://www.linkedin.com/in/angello-ordonez/",
+                "icon": "linkedin"
             }
         ]
     },

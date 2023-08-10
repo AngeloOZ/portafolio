@@ -8,7 +8,6 @@ import { Hero } from "@/components";
 import { LandingInfo } from "@/interfaces";
 
 
-
 interface HomeProps {
   readonly info: LandingInfo;
 }
@@ -17,7 +16,7 @@ export default function Home({ info }: HomeProps) {
 
   return (
     <main>
-      <Hero heroData={info.hero} />
+      <Hero />
       <Link href="/" locale="en">
         English
       </Link>

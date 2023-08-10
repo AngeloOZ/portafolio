@@ -1,7 +1,8 @@
+import { LandingInfo } from '@/interfaces';
 import { ContentContext } from '.';
 
 interface ContentProviderProps {
-    data: any;
+    data: LandingInfo;
     children: React.ReactNode;
 }
 
