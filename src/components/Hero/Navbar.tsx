@@ -2,7 +2,7 @@ import { Navbar as NavbarUI, NavbarBrand, NavbarContent, NavbarItem, Link, Butto
 
 import { AcmeLogo } from "./AcmeLogo";
 
-import styles from "./styles/Hero.module.css";
+import styles from "./styles/Hero.module.scss";
 
 
 export const Navbar = () => {

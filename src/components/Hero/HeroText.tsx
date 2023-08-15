@@ -1,9 +1,9 @@
 import { TypeAnimation } from "react-type-animation"
 import { Button, Link } from "@nextui-org/react";
 
-import { BiLogoFacebook, BiLogoLinkedin } from 'react-icons/bi';
+import { BiLogoFacebook, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi';
 
-import css from './styles/Hero.module.css'
+import css from './styles/Hero.module.scss'
 import { useContentContex } from "@/context/Content";
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
@@ -12,19 +12,17 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 
 const ICONOS = {
     facebook: <BiLogoFacebook size={20} />,
-    linkedin: <BiLogoLinkedin size={20} />
+    linkedin: <BiLogoLinkedin size={20} />,
+    github: <BiLogoGithub size={20} />,
+
 }
 
 export const HeroText = ({ ...props }: Props) => {
     const { hero } = useContentContex();
 
     return (
-        <div>
-            <h1 className={css.hero__text__title}>
-                {hero.greeting} <br />
-                {hero.name}
-                {/* I'm <span className="text-blue-500">Angello Ordonez</span> */}
-            </h1>
+        <div {...props}>
+            <h1 className={css.hero__text__title} dangerouslySetInnerHTML={{ __html: hero.greeting }} />
             <TypeAnimation
                 preRenderFirstString={true}
                 sequence={hero.profession}
@@ -32,11 +30,7 @@ export const HeroText = ({ ...props }: Props) => {
                 className={css.hero__text__typing}
                 repeat={Infinity}
             />
-            <br />
-            <Button color="primary" className="inline-block">
-                About me
-            </Button>
-            <div className="flex" style={{ gap: '10px' }}>
+            <div className={css.hero__text_social}>
                 {
                     hero.socialMedia.map((item, index) => (
                         <Button
@@ -53,7 +47,6 @@ export const HeroText = ({ ...props }: Props) => {
                     ))
                 }
             </div>
-            {/* <HeartIcon /> */}
         </div>
     )
 }

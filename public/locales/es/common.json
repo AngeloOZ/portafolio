@@ -22,7 +22,7 @@
         }
     ],
     "hero": {
-        "greeting": "Hola 👋👋",
+        "greeting": "Hola 👋👋 <br />Soy <span class='text-blue-500'>Angello Ordonez</span>",
         "name": "Soy Angello Ordoñez",
         "profession": [
             500,
