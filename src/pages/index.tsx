@@ -17,9 +17,9 @@ export default function Home({ info }: HomeProps) {
   return (
     <main>
       <Hero />
-      <Link href="/" locale="en">
+      {/* <Link href="/" locale="en">
         English
-      </Link>
+      </Link> */}
     </main>
   )
 }

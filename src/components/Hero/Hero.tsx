@@ -11,7 +11,7 @@ export const Hero = () => {
       <HeroParticles className={css.hero__particles} />
       <div className={css.hero__contenedor}>
         <HeroText className={css.hero__text} />
-        <HeroAvatar className={css.hero__avatar} classNameImage={css.hero__avatar__img} />
+        <HeroAvatar className={css.hero__avatar__contenedor} classNameWapperImage={css.hero__avatar} classNameImage={css.hero__avatar__img} />
       </div>
     </header>
   )

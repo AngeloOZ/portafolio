@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation"
 import { Button, Link } from "@nextui-org/react";
 
-import { BiLogoFacebook, BiLogoGithub, BiLogoLinkedin } from 'react-icons/bi';
+import { BiLogoFacebook, BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiLogoInstagram } from 'react-icons/bi';
 
 import css from './styles/Hero.module.scss'
 import { useContentContex } from "@/context/Content";
@@ -13,6 +13,8 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 const ICONOS = {
     facebook: <BiLogoFacebook size={20} />,
     linkedin: <BiLogoLinkedin size={20} />,
+    twitter: <BiLogoTwitter size={20} />,
+    instagram: <BiLogoInstagram size={20} />,
     github: <BiLogoGithub size={20} />,
 
 }
