@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { UIProvider } from '@/context'
 
 import '@/styles/globals.css'
+import 'react-vertical-timeline-component/style.min.css';
 import { NextUIProvider } from '@nextui-org/react'
 import { ContentProvider } from '@/context/Content'
 

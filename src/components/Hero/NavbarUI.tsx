@@ -16,7 +16,7 @@ export const NavbarUI = () => {
         "Log Out",
     ];
     return (
-        <Navbar>
+        <Navbar >
             <NavbarContent className="sm:hidden" justify="start">
                 <NavbarMenuToggle />
             </NavbarContent>

@@ -19,7 +19,7 @@ export default function Home({ info }: HomeProps) {
       <NavbarUI />
       <Hero />
       <Experience />
-      <Experience />
+      {/* <Experience /> */}
       {/* <Link href="/" locale="en">
         English
       </Link> */}

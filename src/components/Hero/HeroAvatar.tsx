@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Image from 'next/image'
 interface HeroAvatarProps extends React.HTMLAttributes<HTMLDivElement> {
     src?: string;
@@ -12,7 +13,7 @@ export const HeroAvatar = ({ src, alt, classNameWapperImage, classNameImage, ...
 
     return (
         <div {...props}>
-            <div className={classNameWapperImage}>
+            <div className={classNameWapperImage} >
                 <Image
                     src={srcImage}
                     alt={altImage}
