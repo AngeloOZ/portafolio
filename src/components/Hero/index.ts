@@ -1,5 +1,5 @@
 export { HeroParticles } from './HeroParticles';
-export {Hero} from './Hero';
-export {HeroText} from './HeroText';
-export {Navbar} from './Navbar';
-export {HeroAvatar} from './HeroAvatar';
+export { Hero } from './Hero';
+export { HeroText } from './HeroText';
+export { NavbarUI } from './NavbarUI';
+export { HeroAvatar } from './HeroAvatar';

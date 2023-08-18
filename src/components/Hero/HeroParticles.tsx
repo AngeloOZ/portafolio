@@ -1,30 +1,32 @@
-import { useCallback, useContext } from "react";
-
-import Particles from "react-particles";
-import { loadSlim } from "tsparticles-slim";
+import { useCallback } from "react";
 
 import type { Container, Engine } from "tsparticles-engine";
-
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 interface Props {
     className?: string;
 }
 
 export const HeroParticles = ({ className }: Props) => {
+
     const particlesInit = useCallback(async (engine: Engine) => {
-        await loadSlim(engine);
+        await loadFull(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await container;
-    }, []);
+    const particlesLoaded = useCallback(async () => { }, []);
 
     return (
         <Particles
+            className={className}
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
-            className={className}
             options={{
+                backgroundMode: {
+                    enable: true,
+                    zIndex: -1,
+                },
+                fullScreen: { enable: false },
                 background: {
                     color: {
                         value: "#ffffff",
@@ -45,10 +47,10 @@ export const HeroParticles = ({ className }: Props) => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 4, //4
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 150,
                             duration: 0.4,
                         },
                     },
@@ -59,10 +61,13 @@ export const HeroParticles = ({ className }: Props) => {
                     },
                     links: {
                         color: "#000000",
-                        distance: 150,
+                        distance: 150, //200
                         enable: true,
                         opacity: 0.5,
                         width: 1,
+                    },
+                    collisions: {
+                        enable: true,
                     },
                     move: {
                         direction: "none",
@@ -71,7 +76,7 @@ export const HeroParticles = ({ className }: Props) => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 4, // 6
                         straight: false,
                     },
                     number: {

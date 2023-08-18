@@ -4,7 +4,7 @@ import Link from "next/link";
 import { promises as fs } from "fs";
 import path from "path";
 
-import { Hero } from "@/components";
+import { Hero, Experience, NavbarUI } from "@/components";
 import { LandingInfo } from "@/interfaces";
 
 
@@ -16,7 +16,10 @@ export default function Home({ info }: HomeProps) {
 
   return (
     <main>
+      <NavbarUI />
       <Hero />
+      <Experience />
+      <Experience />
       {/* <Link href="/" locale="en">
         English
       </Link> */}
