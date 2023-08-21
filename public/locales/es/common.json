@@ -57,5 +57,70 @@
             }
         ]
     },
+    "experience": {
+        "title": "Experiencia",
+        "subtitle": "Experiencia Laboral",
+        "jobs": [
+            {
+                "company": "PerseoSoft",
+                "period": "Noviembre 2022 - Presente",
+                "position": "Desarrollador Laravel",
+                "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado"
+            },
+            {
+                "company": "Freelancer",
+                "period": "Agosto 2022 - Noviembre 2022",
+                "position": "Full Stack Developer",
+                "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado"
+            },
+            {
+                "company": "DTIC Facultad de Informática y Electrónica - ESPOCH",
+                "period": "Abril 2022 - Agosto 2022",
+                "position": "Desarrollador de aplicaciones de escritorio",
+                "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado"
+            },
+            {
+                "company": "El Fogon de COZ",
+                "period": "Febrero 2022 - Julio 2022",
+                "position": "Full Stack Developer",
+                "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado"
+            },
+            {
+                "company": "Jessica Ballesteros - Contratista",
+                "period": "Diciembre 2021 - Febrero 2022",
+                "position": "Desarrollador PHP, JS",
+                "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado"
+            }
+        ]
+    },
+    "skills": {
+        "title": "",
+        "subtitle": "Habilidades",
+        "soon": "Proximamente",
+        "skills": [
+            {
+                "name": "",
+                "icon": "",
+                "percentage": 0
+            }
+        ]
+    },
+    "services": [
+        {
+            "name": "Desarrollo Web",
+            "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado",
+            "icon": "web"
+        },
+        {
+            "name": "Desarrollo de Software",
+            "description": "Desarrollo de aplicaciones de escritorio con las ultimas tecnologias del mercado",
+            "icon": "desktop"
+        },
+        {
+            "name": "Desarrollo de Aplicaciones Moviles",
+            "description": "Desarrollo de aplicaciones moviles con las ultimas tecnologias del mercado",
+            "icon": "mobile"
+        }
+    ],
     "about": []
 }
