@@ -29,7 +29,7 @@ export const HeroParticles = ({ className }: Props) => {
                 fullScreen: { enable: false },
                 background: {
                     color: {
-                        value: "#ffffff",
+                        value: "#f7f7f7",
                     },
                 },
                 fpsLimit: 120,

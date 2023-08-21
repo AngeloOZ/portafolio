@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BiSolidBriefcase } from 'react-icons/bi';
+import { BiSolidBriefcase, BiSolidStar } from 'react-icons/bi';
 import { FaFlagCheckered } from 'react-icons/fa';
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -12,32 +12,36 @@ export const Experience = () => {
   const { experience } = useContentContex();
   return (
     <div className={css.contenedor}>
-      <h1>{experience.title}</h1>
-      <VerticalTimeline layout='1-column-left' lineColor='#000'>
+      <h2 className={css.contenedor__title}>{experience.title}</h2>
+      <VerticalTimeline lineColor='#ABABAB'>
         {
           experience.jobs.map((job, index) => (
             <VerticalTimelineElement
-              className="vertical-timeline-element--work"
-              contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-              date={job.period}
-              iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-              icon={<BiSolidBriefcase size={15} />}
               key={job.company + index}
+              className="vertical-timeline-element"
+              textClassName={css.vertical__content}
+
+              date={job.period}
+              dateClassName={css.vertical__date}
+
+              icon={<BiSolidBriefcase size={15} />}
+              iconClassName={css.vertical__icon}
             >
-              <h3 className="vertical-timeline-element-title">{job.company}</h3>
-              <h4 className="vertical-timeline-element-subtitle">{job.position}</h4>
+              <h3 className={css.content__title}>{job.company}</h3>
+              <h4 className={css.content__subtitle}>{job.position}</h4>
+
               {
                 job?.description && (
-                  <p>{job.description}</p>
+                  <p className={css.content__text}>{job.description}</p>
                 )
               }
             </VerticalTimelineElement>
           ))
         }
         <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          icon={<FaFlagCheckered size={18} />}
+          iconClassName={css.vertical__icon}
+          icon={<BiSolidStar size={1} />}
+          visible={false}
         />
       </VerticalTimeline>
     </div>
