@@ -11,7 +11,7 @@ import css from './styles/experience.module.scss'
 export const Experience = () => {
   const { experience } = useContentContex();
   return (
-    <div className={css.contenedor}>
+    <div className={css.contenedor} id='experiencia'>
       <h2 className={css.contenedor__title}>{experience.title}</h2>
       <VerticalTimeline lineColor='#ABABAB'>
         {

@@ -10,7 +10,7 @@ export const Skills = () => {
     const { skills } = useContentContex();
 
     return (
-        <main className={css.skills}>
+        <main className={css.skills} id='habilidades'>
             <h2 className='text-center text-4xl font-semibold mb-8'>{skills.title}</h2>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-screen-xl m-auto'>
                 {

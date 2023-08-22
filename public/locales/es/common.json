@@ -2,23 +2,15 @@
     "navbar": [
         {
             "name": "Inicio",
-            "url": "#home"
+            "url": "#inicio"
         },
         {
-            "name": "Sobre mi",
-            "url": "#about"
+            "name": "Experiencia",
+            "url": "#experiencia"
         },
         {
-            "name": "Servicios",
-            "url": "#services"
-        },
-        {
-            "name": "Portafolio",
-            "url": "#portfolio"
-        },
-        {
-            "name": "Contacto",
-            "url": "#contact"
+            "name": "Habilidades",
+            "url": "#habilidades"
         }
     ],
     "hero": {
