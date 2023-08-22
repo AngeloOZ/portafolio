@@ -94,14 +94,79 @@
         ]
     },
     "skills": {
-        "title": "",
+        "title": "Mis Habilidades",
         "subtitle": "Habilidades",
         "soon": "Proximamente",
         "skills": [
             {
-                "name": "",
-                "icon": "",
-                "percentage": 0
+                "name": "HTML5",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/dnwhnlgxoetwwynl6f2g.png",
+                "percentage": 80
+            },
+            {
+                "name": "CSS3",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736641/portafolio/skills/pbqxciylsoa9vvzkhd6v.png",
+                "percentage": 80
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736641/portafolio/skills/vwrnyvi2adfrtcdlhog1.png",
+                "percentage": 80
+            },
+            {
+                "name": "JavaScript",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736641/portafolio/skills/retnmnile2mzhslj8xjj.png",
+                "percentage": 80
+            },
+            {
+                "name": "TypeScript",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736643/portafolio/skills/ooldmrw5km0vdvdpa1rq.png",
+                "percentage": 80
+            },
+            {
+                "name": "React",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/fpskaqnwcennzphvt0rg.png",
+                "percentage": 80
+            },
+            {
+                "name": "Context API",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/fpskaqnwcennzphvt0rg.png",
+                "percentage": 80
+            },
+            {
+                "name": "Next.js",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/ef0nzvxu029mdtokw1pv.png",
+                "percentage": 80
+            },
+            {
+                "name": "Material UI",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/iu5ue9zb9ezujfvyme3t.png",
+                "percentage": 80
+            },
+            {
+                "name": "Node.js",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/vxhurl0cfbiu8lihhirf.png",
+                "percentage": 80
+            },
+            {
+                "name": "Express.js",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692737408/express_icfshh.png",
+                "percentage": 80
+            },
+            {
+                "name": "PHP",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/hakurinvzbash0tiqvfh.png",
+                "percentage": 80
+            },
+            {
+                "name": "Laravel",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/dpz3hzbthnyyzv5yke4x.png",
+                "percentage": 80
+            },
+            {
+                "name": "Flutter",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736643/portafolio/skills/omz4ktdjd0ongg1gioub.png",
+                "percentage": 80
             }
         ]
     },
