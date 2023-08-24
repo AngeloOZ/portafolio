@@ -10,12 +10,12 @@ import { ContentProvider } from '@/context/Content'
 export default function App({ Component, pageProps }: AppProps) {
 
   return (
-    <ContentProvider data={pageProps.data}>
-      <NextUIProvider>
-        <UIProvider>
+    <UIProvider>
+      <ContentProvider data={pageProps.data}>
+        <NextUIProvider>
           <Component {...pageProps} />
-        </UIProvider>
-      </NextUIProvider>
-    </ContentProvider>
+        </NextUIProvider>
+      </ContentProvider>
+    </UIProvider>
   )
 }

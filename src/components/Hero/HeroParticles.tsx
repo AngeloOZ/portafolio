@@ -3,12 +3,13 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import { useUIContext } from "@/context";
 interface Props {
     className?: string;
 }
 
 export const HeroParticles = ({ className }: Props) => {
-
+    const { isDarkMode } = useUIContext();
     const particlesInit = useCallback(async (engine: Engine) => {
         await loadFull(engine);
     }, []);
@@ -29,7 +30,7 @@ export const HeroParticles = ({ className }: Props) => {
                 fullScreen: { enable: false },
                 background: {
                     color: {
-                        value: "#f7f7f7",
+                        value: isDarkMode ? "#000" : "#f7f7f7",
                     },
                 },
                 fpsLimit: 120,
@@ -57,10 +58,10 @@ export const HeroParticles = ({ className }: Props) => {
                 },
                 particles: {
                     color: {
-                        value: "#000000",
+                        value: isDarkMode ? "#FFFFFF" : "#000000",
                     },
                     links: {
-                        color: "#000000",
+                        color: isDarkMode ? "#FFFFFF" : "#000000",
                         distance: 160, //200
                         enable: true,
                         opacity: 0.5,

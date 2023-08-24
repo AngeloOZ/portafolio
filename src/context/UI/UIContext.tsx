@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { createContext, useContext } from 'react';
 
 
 export interface UIContextProps {
@@ -9,3 +9,12 @@ export interface UIContextProps {
 
 
 export const UIContext = createContext({} as UIContextProps);
+
+export function useUIContext() {
+    const context = useContext(UIContext);
+    if (!context) {
+        throw new Error('useData must be used within a DataProvider');
+    }
+    return context;
+}
+

@@ -18,7 +18,7 @@ export const Skills = () => {
     return (
         <motion.main
             layout
-            className={css.skills}
+            className={`${css.skills} bg-background`}
             id='habilidades'
         >
             <h2 className='text-center text-4xl font-semibold mb-8'>{skills.title}</h2>

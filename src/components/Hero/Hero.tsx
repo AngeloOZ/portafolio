@@ -4,7 +4,7 @@ import { HeroText, NavbarUI, HeroAvatar, HeroParticles } from '.';
 
 export const Hero = () => {
   return (
-    <header className={css.hero} id='inicio'>
+    <header className={`${css.hero}`} id='inicio'>
       <HeroParticles className={css.hero__particles} />
       <div className={css.hero__contenedor}>
         <HeroText className={css.hero__text} />
