@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation"
 import { Button, Link } from "@nextui-org/react";
 
-import { BiLogoFacebook, BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiLogoInstagram } from 'react-icons/bi';
+import { BiLogoFacebook, BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiLogoInstagram, BiLogoGitlab, BiLogoWhatsapp, BiLogoTelegram } from 'react-icons/bi';
 
 import css from './styles/Hero.module.scss'
 import { useContentContex } from "@/context/Content";
@@ -16,7 +16,9 @@ const ICONOS = {
     twitter: <BiLogoTwitter size={20} />,
     instagram: <BiLogoInstagram size={20} />,
     github: <BiLogoGithub size={20} />,
-
+    gitlab: <BiLogoGitlab size={20} />,
+    whatsapp: <BiLogoWhatsapp size={20} />,
+    telegram: <BiLogoTelegram size={20} />,
 }
 
 export const HeroText = ({ ...props }: Props) => {

@@ -28,14 +28,14 @@
         "avatar": "https://avatars.githubusercontent.com/u/43109895?v=4",
         "socialMedia": [
             {
-                "name": "facebook",
-                "url": "https://www.facebook.com/angello.ordonez.5",
+                "name": "github",
+                "url": "https://github.com/AngeloOZ",
                 "icon": "github"
             },
             {
-                "name": "twitter",
-                "url": "https://twitter.com/angello_ordo",
-                "icon": "twitter"
+                "name": "whatsapp",
+                "url": "https://github.com/AngeloOZ",
+                "icon": "whatsapp"
             },
             {
                 "name": "instagram",
@@ -192,7 +192,7 @@
             },
             {
                 "name": "Node.js",
-                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/vxhurl0cfbiu8lihhirf.png",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692907384/nodejs2_agkwje.png",
                 "soon": false
             },
             {
@@ -213,7 +213,7 @@
             {
                 "name": "Flutter",
                 "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736643/portafolio/skills/omz4ktdjd0ongg1gioub.png",
-                "soon": false
+                "soon": true
             }
         ]
     },
