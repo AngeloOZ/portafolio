@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import Link from "next/link";
 
 import { promises as fs } from "fs";
@@ -16,6 +17,9 @@ export default function Home({ info }: HomeProps) {
 
   return (
     <main>
+      <Head>
+        <title>Angello</title>
+      </Head>
       <NavbarUI />
       <Hero />
       <Experience />
