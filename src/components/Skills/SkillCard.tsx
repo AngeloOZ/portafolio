@@ -26,7 +26,7 @@ export const SkillCard = ({ skill, setSelectedCard }: Props) => {
         >
             <Card isPressable className='w-full' onClick={() => setSelectedCard(skill)}>
                 {
-                    skill.soon && <span className="absolute text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-primary">{ skills.soonText }</span>
+                    skill.soon && <span className="absolute -right-7 top-3 rotate-45 text-xs font-medium mr-2 px-5 py-0.5 rounded bg-primary">{ skills.soonText }</span>
                 }
                 <CardHeader className='flex justify-around'>
                     <p className='font-bold text-base'>{skill.name}</p>

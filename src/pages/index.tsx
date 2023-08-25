@@ -7,7 +7,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import { useUIContext } from '@/context';
-import { Hero, Experience, NavbarUI, Skills } from "@/components";
+import { Hero, Experience, NavbarUI, Skills, Projects } from "@/components";
 import { LandingInfo } from "@/interfaces";
 
 
@@ -16,20 +16,17 @@ interface HomeProps {
 }
 
 export default function Home() {
-	const { isDarkMode, toggleDarkMode } = useUIContext();
-
+	const { isDarkMode } = useUIContext();
 
 	useEffect(() => {
 		const handleVisibilityChange = () => {
 			if (document.hidden) {
-				document.title = 'Regresa pronto!';
+				document.title = 'Regresa por favor 😭👏';
 			} else {
 				document.title = 'Angello';
 			}
 		};
-
 		document.addEventListener('visibilitychange', handleVisibilityChange);
-
 		return () => {
 			document.removeEventListener('visibilitychange', handleVisibilityChange);
 		};
@@ -44,10 +41,7 @@ export default function Home() {
 			<Hero />
 			<Experience />
 			<Skills />
-			{/* <Experience /> */}
-			{/* <Link href="/" locale="en">
-        English
-      </Link> */}
+			<Projects />
 		</main>
 	)
 }

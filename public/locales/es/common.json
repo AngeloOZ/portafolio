@@ -88,7 +88,7 @@
     "skills": {
         "title": "Mis Habilidades",
         "subtitle": "Habilidades",
-        "soonText": "Proximamente",
+        "soonText": "En curso",
         "skills": [
             {
                 "name": "HTML5",

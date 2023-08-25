@@ -15,7 +15,7 @@ export const Experience = () => {
 
   return (
     <div className={`${css.contenedor} bg-background`} id='experiencia'>
-      <h2 className={css.contenedor__title}>{experience.title}</h2>
+      <h2 className='text-4xl font-semibold mb-8 text-center'>{experience.title}</h2>
       <VerticalTimeline lineColor='#ABABAB'>
         {
           experience.jobs.map((job, index) => (
