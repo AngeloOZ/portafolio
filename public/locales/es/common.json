@@ -217,22 +217,22 @@
             }
         ]
     },
-    "services": [
-        {
-            "name": "Desarrollo Web",
-            "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado",
-            "icon": "web"
-        },
-        {
-            "name": "Desarrollo de Software",
-            "description": "Desarrollo de aplicaciones de escritorio con las ultimas tecnologias del mercado",
-            "icon": "desktop"
-        },
-        {
-            "name": "Desarrollo de Aplicaciones Moviles",
-            "description": "Desarrollo de aplicaciones moviles con las ultimas tecnologias del mercado",
-            "icon": "mobile"
-        }
-    ],
+    "projects": {
+        "title": "Mis Proyectos",
+        "subtitle": "Proyectos",
+        "projects": [
+            {
+                "name": "Portafolio",
+                "description": "Portafolio personal",
+                "image": "",
+                "tecnology": [
+                    "React",
+                    "TailwindCSS"
+                ],
+                "repository": "",
+                "live": ""
+            }
+        ]
+    },
     "about": []
 }

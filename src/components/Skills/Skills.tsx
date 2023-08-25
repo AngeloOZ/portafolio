@@ -6,6 +6,7 @@ import { Skill } from '@/interfaces';
 import css from './styles/Skills.module.scss';
 import { useContentContex } from '@/context/Content';
 import { SkillCard, SkillModal } from '.';
+import { Title } from '..';
 
 export const Skills = () => {
     const { skills, navbar } = useContentContex();
@@ -21,7 +22,7 @@ export const Skills = () => {
             className={`${css.skills} bg-background`}
             id='habilidades'
         >
-            <h2 className='text-center text-4xl font-semibold mb-8'>{skills.title}</h2>
+            <Title text={skills.title} />
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-screen-xl m-auto'>
                 {
                     skills.skills.map((skill, index) => (

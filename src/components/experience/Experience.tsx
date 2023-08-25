@@ -8,6 +8,7 @@ import { useContentContex } from '@/context/Content';
 
 import css from './styles/experience.module.scss'
 import { useUIContext } from '@/context';
+import { Title } from '..';
 
 export const Experience = () => {
   const { experience } = useContentContex();
@@ -15,7 +16,7 @@ export const Experience = () => {
 
   return (
     <div className={`${css.contenedor} bg-background`} id='experiencia'>
-      <h2 className='text-4xl font-semibold mb-8 text-center'>{experience.title}</h2>
+      <Title text={experience.title} />
       <VerticalTimeline lineColor='#ABABAB'>
         {
           experience.jobs.map((job, index) => (
@@ -24,11 +25,11 @@ export const Experience = () => {
               className="vertical-timeline-element--work"
               textClassName={css.vertical__content}
               contentStyle={{
-                background: isDarkMode ? '#181818' : "#F7f7f7",
+                background: isDarkMode ? '#181818' : "#FFF",
                 color: isDarkMode ? '#fff' : '#000',
               }}
               date={job.period}
-              contentArrowStyle={{ borderRight: `7px solid ${isDarkMode ? '#181818' : "#F7f7f7"}` }}
+              contentArrowStyle={{ borderRight: `7px solid ${isDarkMode ? '#181818' : "#fff"}` }}
               icon={<BiSolidBriefcase size={15} />}
               iconClassName={css.vertical__icon}
             >
