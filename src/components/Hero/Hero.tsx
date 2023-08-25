@@ -1,10 +1,14 @@
 import css from './styles/Hero.module.scss'
+import { HeroText, HeroAvatar, HeroParticles } from '.';
 
-import { HeroText, NavbarUI, HeroAvatar, HeroParticles } from '.';
+interface Props {
+  id: string;
+}
 
-export const Hero = () => {
+export const Hero = ({ id }: Props) => {
+
   return (
-    <header className={`${css.hero}`} id='inicio'>
+    <header className={`${css.hero}`} id={id}>
       <HeroParticles className={css.hero__particles} />
       <div className={css.hero__contenedor}>
         <HeroText className={`${css.hero__text} dark:text-white`} />

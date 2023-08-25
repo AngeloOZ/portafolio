@@ -8,8 +8,12 @@ import { useContentContex } from '@/context/Content';
 import { SkillCard, SkillModal } from '.';
 import { Title } from '..';
 
-export const Skills = () => {
-    const { skills, navbar } = useContentContex();
+interface Props {
+    id: string;
+}
+
+export const Skills = ({ id }: Props) => {
+    const { skills } = useContentContex();
     const [selectedCard, setSelectedCard] = useState<Skill>();
 
     const setCard = (skill: Skill) => {
@@ -20,7 +24,7 @@ export const Skills = () => {
         <motion.main
             layout
             className={`${css.skills} bg-background`}
-            id='habilidades'
+            id={id}
         >
             <Title text={skills.title} />
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-screen-xl m-auto'>

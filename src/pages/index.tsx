@@ -6,7 +6,7 @@ import Link from "next/link";
 import { promises as fs } from "fs";
 import path from "path";
 
-import { useUIContext } from '@/context';
+import { useUIContext, useContentContex } from '@/context';
 import { Hero, Experience, NavbarUI, Skills, Projects } from "@/components";
 import { LandingInfo } from "@/interfaces";
 
@@ -17,6 +17,7 @@ interface HomeProps {
 
 export default function Home() {
 	const { isDarkMode } = useUIContext();
+	const { navbar } = useContentContex();
 
 	useEffect(() => {
 		const handleVisibilityChange = () => {
@@ -38,10 +39,10 @@ export default function Home() {
 				<title>Angello</title>
 			</Head>
 			<NavbarUI />
-			<Hero />
-			<Experience />
-			<Skills />
-			<Projects />
+			<Hero id={navbar[0].url.slice(1)} />
+			<Experience id={navbar[1].url.slice(1)} />
+			<Skills id={navbar[2].url.slice(1)} />
+			<Projects id={navbar[3].url.slice(1)} />
 		</main>
 	)
 }

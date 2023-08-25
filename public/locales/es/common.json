@@ -11,6 +11,14 @@
         {
             "name": "Habilidades",
             "url": "#habilidades"
+        },
+        {
+            "name": "Proyectos",
+            "url": "#proyectos"
+        },
+        {
+            "name": "Sobre mi",
+            "url": "#sobre-mi"
         }
     ],
     "hero": {
@@ -224,10 +232,24 @@
             {
                 "name": "Portafolio",
                 "description": "Portafolio personal",
-                "image": "",
+                "image": "https://nextui.org/images/hero-card-complete.jpeg",
                 "tecnology": [
                     "React",
                     "TailwindCSS"
+                ],
+                "repository": "",
+                "live": ""
+            },
+            {
+                "name": "Habla+",
+                "description": "Portafolio personal presasd",
+                "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                "tecnology": [
+                    "React",
+                    "Next.js",
+                    "Matertial UI",
+                    "SWR",
+                    "REST API"
                 ],
                 "repository": "",
                 "live": ""

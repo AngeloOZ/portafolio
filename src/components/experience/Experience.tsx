@@ -10,12 +10,16 @@ import css from './styles/experience.module.scss'
 import { useUIContext } from '@/context';
 import { Title } from '..';
 
-export const Experience = () => {
+interface Props {
+  id: string;
+}
+
+export const Experience = ({ id }: Props) => {
   const { experience } = useContentContex();
   const { isDarkMode } = useUIContext();
 
   return (
-    <div className={`${css.contenedor} bg-background`} id='experiencia'>
+    <section className={`${css.contenedor} bg-background`} id={id}>
       <Title text={experience.title} />
       <VerticalTimeline lineColor='#ABABAB'>
         {
@@ -50,6 +54,6 @@ export const Experience = () => {
           visible={false}
         />
       </VerticalTimeline>
-    </div>
+    </section>
   )
 }
