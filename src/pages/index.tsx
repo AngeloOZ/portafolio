@@ -49,8 +49,8 @@ export default function Home() {
 
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	const json = path.join(process.cwd(), `public/locales/es/common.json`)
-	// const json = path.join(process.cwd(), `public/locales/${locale}/common.json`)
+	// const json = path.join(process.cwd(), `public/locales/es/common.json`)
+	const json = path.join(process.cwd(), `public/locales/${locale}/common.json`)
 	const data = await fs.readFile(json, { encoding: 'utf8' });
 	const info = JSON.parse(data);
 

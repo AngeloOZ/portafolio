@@ -1,3 +1,4 @@
+// import { Image } from '@nextui-org/react';
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
 interface HeroAvatarProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -13,13 +14,14 @@ export const HeroAvatar = ({ src, alt, classNameWapperImage, classNameImage, ...
 
     return (
         <div {...props}>
-            <div className={classNameWapperImage} >
+            <div className={`${classNameWapperImage} shadow-2xl`} >
                 <Image
                     src={srcImage}
                     alt={altImage}
                     className={classNameImage}
-                    height={100}
-                    width={100}
+                    height={500}
+                    width={500}
+                    objectFit='cover'
                 />
             </div>
         </div>

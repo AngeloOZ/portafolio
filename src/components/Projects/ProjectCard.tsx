@@ -31,7 +31,7 @@ export const ProjectCard = ({ project }: Props) => {
                 <p className="mb-3 font-normal">{project.description}</p>
                 <div className='flex gap-2 flex-wrap'>
                     {
-                        project.tecnology.map((tecnology, index) => (
+                        project.technology.map((tecnology, index) => (
                             <Chip
                                 key={tecnology + index}
                                 color="primary"

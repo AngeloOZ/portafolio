@@ -1,59 +1,270 @@
 {
     "navbar": [
         {
-            "name": "Inicio",
+            "name": "Home",
             "url": "#home"
         },
         {
-            "name": "Sobre mi",
-            "url": "#about"
+            "name": "Experience",
+            "url": "#experience"
         },
         {
-            "name": "Servicios",
-            "url": "#services"
+            "name": "Skills",
+            "url": "#skills"
         },
         {
-            "name": "Portafolio",
-            "url": "#portfolio"
+            "name": "Projects",
+            "url": "#projects"
         },
         {
-            "name": "Contacto",
-            "url": "#contact"
+            "name": "About Me",
+            "url": "#about-me"
         }
     ],
+    "languages": {
+        "es": {
+            "name": "Spanish (EC)",
+            "image": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693015301/portafolio/navbar/zfc15rt4zuikhlhnhd6e.png",
+            "code": "es"
+        },
+        "en": {
+            "name": "English (US)",
+            "image": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693015301/portafolio/navbar/n5mrak5crhyp8zsjdpsd.png",
+            "code": "en"
+        }
+    },
     "hero": {
-        "greeting": "Hola 👋👋",
-        "name": "Soy Angello Ordoñez",
+        "greeting": "Hello 👋👋 <br />I'm <span class='text-blue-500'>Angello Ordonez</span>",
+        "name": "I'm Angello Ordonez",
         "profession": [
             500,
-            "Ingeniero de Software",
+            "Software Engineer",
             500,
-            "Desarrollador Web",
+            "Web Developer",
             500,
-            "Desarrollador de Software",
+            "Software Developer",
             1000
         ],
-        "avatar": "https://avatars.githubusercontent.com/u/43109895?v=4",
+        "avatar": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693024198/portafolio/hero/WhatsApp_Image_2023-08-25_at_23.28.13_vnxlcw.jpg",
         "socialMedia": [
             {
-                "name": "facebook",
-                "url": "https://www.facebook.com/angello.ordonez.5",
-                "icon": "facebook"
+                "name": "github",
+                "url": "https://github.com/AngeloOZ",
+                "icon": "github"
             },
             {
-                "name": "twitter",
-                "url": "https://twitter.com/angello_ordo",
-                "icon": "facebook"
+                "name": "whatsapp",
+                "url": "https://github.com/AngeloOZ",
+                "icon": "whatsapp"
             },
             {
                 "name": "instagram",
                 "url": "https://www.instagram.com/angello_ordo/",
-                "icon": "facebook"
+                "icon": "instagram"
             },
             {
                 "name": "linkedin",
                 "url": "https://www.linkedin.com/in/angello-ordonez/",
                 "icon": "linkedin"
+            }
+        ]
+    },
+    "experience": {
+        "title": "Experience",
+        "subtitle": "Work Experience",
+        "jobs": [
+            {
+                "company": "PerseoSoft",
+                "period": "November 2022 - Present",
+                "position": "Laravel Developer",
+                "description": "Web application development with the latest market technologies"
+            },
+            {
+                "company": "Freelancer",
+                "period": "August 2022 - November 2022",
+                "position": "Full Stack Developer",
+                "description": "Web application development with the latest market technologies"
+            },
+            {
+                "company": "DTIC Faculty of Informatics and Electronics - ESPOCH",
+                "period": "April 2022 - August 2022",
+                "position": "Desktop Application Developer",
+                "description": "Web application development with the latest market technologies"
+            },
+            {
+                "company": "El Fogon de COZ",
+                "period": "February 2022 - July 2022",
+                "position": "Full Stack Developer",
+                "description": "Web application development with the latest market technologies"
+            },
+            {
+                "company": "Jessica Ballesteros - Contractor",
+                "period": "December 2021 - February 2022",
+                "position": "PHP, JS Developer",
+                "description": "Web application development with the latest market technologies"
+            }
+        ]
+    },
+    "skills": {
+        "title": "My Skills",
+        "subtitle": "Skills",
+        "soonText": "In progress",
+        "skills": [
+            {
+                "name": "HTML5",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/dnwhnlgxoetwwynl6f2g.png",
+                "soon": false,
+                "listContent": [
+                    "Meta attributes",
+                    "HTML document structure",
+                    "Elements and attributes",
+                    "Semantic elements",
+                    "Forms",
+                    "Multimedia"
+                ]
+            },
+            {
+                "name": "CSS3",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736641/portafolio/skills/pbqxciylsoa9vvzkhd6v.png",
+                "soon": false,
+                "listContent": [
+                    "Selectors",
+                    "Pseudo-classes and pseudo-elements",
+                    "Box model",
+                    "Flexbox",
+                    "Grid",
+                    "Animations",
+                    "Responsive Design",
+                    "CSS Variables",
+                    "BEM Naming"
+                ]
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736641/portafolio/skills/vwrnyvi2adfrtcdlhog1.png",
+                "soon": false,
+                "listContent": [
+                    "Grid",
+                    "Components",
+                    "Forms",
+                    "Responsive Design",
+                    "Icons"
+                ]
+            },
+            {
+                "name": "JavaScript",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736641/portafolio/skills/retnmnile2mzhslj8xjj.png",
+                "soon": false,
+                "listContent": [
+                    "Basic syntax",
+                    "Control structures",
+                    "Functions",
+                    "Arrays",
+                    "Objects",
+                    "DOM",
+                    "AJAX",
+                    "JSON",
+                    "ES6+",
+                    "Asynchronicity"
+                ]
+            },
+            {
+                "name": "TypeScript",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736643/portafolio/skills/ooldmrw5km0vdvdpa1rq.png",
+                "soon": false,
+                "listContent": [
+                    "Basic syntax",
+                    "Functions",
+                    "Interfaces",
+                    "Classes",
+                    "Advanced types",
+                    "Error handling",
+                    "Asynchronicity"
+                ]
+            },
+            {
+                "name": "React",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/fpskaqnwcennzphvt0rg.png",
+                "soon": false,
+                "listContent": [
+                    "Components",
+                    "Hooks",
+                    "Custom Hooks",
+                    "Props",
+                    "Context API",
+                    "React Router",
+                    "Conditional rendering",
+                    "HOC",
+                    "Compound Component Pattern",
+                    "Control Props",
+                    "Render Props"
+                ]
+            },
+            {
+                "name": "Next.js",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/ef0nzvxu029mdtokw1pv.png",
+                "soon": false
+            },
+            {
+                "name": "Material UI",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/iu5ue9zb9ezujfvyme3t.png",
+                "soon": false
+            },
+            {
+                "name": "Node.js",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692907384/nodejs2_agkwje.png",
+                "soon": false
+            },
+            {
+                "name": "Express.js",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692737408/express_icfshh.png",
+                "soon": false
+            },
+            {
+                "name": "PHP",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/hakurinvzbash0tiqvfh.png",
+                "soon": false
+            },
+            {
+                "name": "Laravel",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736642/portafolio/skills/dpz3hzbthnyyzv5yke4x.png",
+                "soon": false
+            },
+            {
+                "name": "Flutter",
+                "icon": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1692736643/portafolio/skills/omz4ktdjd0ongg1gioub.png",
+                "soon": true
+            }
+        ]
+    },
+    "projects": {
+        "title": "My Projects",
+        "subtitle": "Projects",
+        "projects": [
+            {
+                "name": "Portfolio",
+                "description": "Personal portfolio",
+                "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                "technology": [
+                    "React",
+                    "TailwindCSS"
+                ],
+                "repository": "",
+                "live": ""
+            },
+            {
+                "name": "Habla+",
+                "description": "Personal portfolio presasd",
+                "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                "technology": [
+                    "React",
+                    "Next.js",
+                    "Material UI",
+                    "SWR",
+                    "REST API"
+                ],
+                "repository": "",
+                "live": ""
             }
         ]
     },

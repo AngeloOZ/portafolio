@@ -21,6 +21,18 @@
             "url": "#sobre-mi"
         }
     ],
+    "languages": {
+        "es": {
+            "name": "Español (EC)",
+            "image": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693015301/portafolio/navbar/zfc15rt4zuikhlhnhd6e.png",
+            "code": "es"
+        },
+        "en": {
+            "name": "Ingles (US)",
+            "image": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693015301/portafolio/navbar/n5mrak5crhyp8zsjdpsd.png",
+            "code": "en"
+        }
+    },
     "hero": {
         "greeting": "Hola 👋👋 <br />Soy <span class='text-blue-500'>Angello Ordonez</span>",
         "name": "Soy Angello Ordoñez",
@@ -33,7 +45,7 @@
             "Desarrollador de Software",
             1000
         ],
-        "avatar": "https://avatars.githubusercontent.com/u/43109895?v=4",
+        "avatar": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693024847/portafolio/hero/IMG-20230312-WA0069_sqtcgy_ac3779.jpg",
         "socialMedia": [
             {
                 "name": "github",
@@ -233,7 +245,7 @@
                 "name": "Portafolio",
                 "description": "Portafolio personal",
                 "image": "https://nextui.org/images/hero-card-complete.jpeg",
-                "tecnology": [
+                "technology": [
                     "React",
                     "TailwindCSS"
                 ],
@@ -244,7 +256,7 @@
                 "name": "Habla+",
                 "description": "Portafolio personal presasd",
                 "image": "https://nextui.org/images/hero-card-complete.jpeg",
-                "tecnology": [
+                "technology": [
                     "React",
                     "Next.js",
                     "Matertial UI",
