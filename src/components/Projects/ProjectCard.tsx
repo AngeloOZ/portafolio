@@ -10,8 +10,9 @@ export const ProjectCard = ({ project }: Props) => {
     return (
         <motion.div
             className="relative overflow-hidden rounded-lg max-w-sm shadow-lg text-black dark:text-white dark:bg-[#181818]"
-            initial={{ height: 250 }}
-            whileHover={{ height: 'auto' }}
+            initial={{ transform: "translateX(-100%)" }}
+            animate={{ transform: "translateX(0)" }}
+            // whileHover={{ height: 'auto' }}
         >
             <Image
                 src={project.image}

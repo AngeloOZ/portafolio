@@ -30,7 +30,6 @@ export const SkillCard = ({ skill, setSelectedCard }: Props) => {
                 }
                 <CardHeader className='flex justify-around'>
                     <p className='font-bold text-base'>{skill.name}</p>
-
                     <Image
                         alt={`logo ${skill.name}`}
                         height={40}

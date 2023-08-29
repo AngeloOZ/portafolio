@@ -13,7 +13,7 @@ export const Projects = ({ id }: Props) => {
     return (
         <section className='min-h-screen dark:bg-background' id={id}>
             <Title text={projects.title} />
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-screen-xl m-auto'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-screen-xl m-auto justify-items-center p-2 sm:p-0'>
                 {
                     projects.projects.map((project, index) => (
                         <ProjectCard key={index + project.name} project={project} />
