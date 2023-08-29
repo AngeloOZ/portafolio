@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenu, NavbarMenuItem, NavbarMenuToggle, Dropdown, DropdownTrigger, Avatar, DropdownMenu, DropdownItem, User, Skeleton } from "@nextui-org/react";
 
 import { BsMoonStarsFill, BsCloudSunFill } from "react-icons/bs";
@@ -5,14 +8,12 @@ import { BsMoonStarsFill, BsCloudSunFill } from "react-icons/bs";
 import { AcmeLogo } from "./AcmeLogo";
 import { useContentContex } from "@/context/Content";
 import { useUIContext } from "@/context";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import { Language } from "@/interfaces";
-import { log } from "console";
 
 export const NavbarUI = () => {
     const { navbar } = useContentContex();
     const { isDarkMode, toggleDarkMode } = useUIContext();
+    const { asPath } = useRouter();
 
     return (
         <Navbar className="bg-background" maxWidth="2xl">
@@ -28,8 +29,11 @@ export const NavbarUI = () => {
             <NavbarContent className="hidden md:flex gap-4" justify="center">
                 {
                     navbar.map((item, index) => (
-                        <NavbarItem key={`${item}-${index}`}>
-                            <Link color="foreground" href={item.url}>
+                        <NavbarItem 
+                            key={`${item}-${index}`}
+                            isActive={asPath.slice(1) === item.url}
+                        >
+                            <Link href={item.url} color="foreground">
                                 {item.name}
                             </Link>
                         </NavbarItem>
@@ -50,17 +54,6 @@ export const NavbarUI = () => {
                     </Button>
                 </NavbarItem>
             </NavbarContent>
-
-            {/* <NavbarContent justify="end">
-                <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Button as={Link} color="primary" href="#" variant="flat">
-                        Sign Up
-                    </Button>
-                </NavbarItem>
-            </NavbarContent> */}
 
             <NavbarMenu>
                 {navbar.map((item, index) => (

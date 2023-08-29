@@ -21,7 +21,7 @@ export const Experience = ({ id }: Props) => {
   return (
     <section className={`${css.contenedor} bg-background`} id={id}>
       <Title text={experience.title} />
-      <VerticalTimeline lineColor='#ABABAB'>
+      <VerticalTimeline lineColor='#ABABAB' animate={false}>
         {
           experience.jobs.map((job, index) => (
             <VerticalTimelineElement

@@ -100,8 +100,7 @@
             {
                 "company": "Jessica Ballesteros - Contratista",
                 "period": "Diciembre 2021 - Febrero 2022",
-                "position": "Desarrollador PHP, JS",
-                "description": "Desarrollo de aplicaciones web con las ultimas tecnologias del mercado"
+                "position": "Desarrollador PHP, JS"
             }
         ]
     },
@@ -268,5 +267,14 @@
             }
         ]
     },
-    "about": []
+    "about": [
+        {
+            "title": "Sobre mi",
+            "subtitle": "Sobre mi",
+            "photo": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693024847/portafolio/hero/IMG-20230312-WA0069_sqtcgy_ac3779.jpg",
+            "content": [
+                "Soy un desarrollador de software con 2 años de experiencia en el desarrollo de aplicaciones web y de escritorio, con c"
+            ]
+        }
+    ]
 }

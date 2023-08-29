@@ -24,7 +24,7 @@ export default function Home() {
 			if (document.hidden) {
 				document.title = 'Regresa por favor 😭👏';
 			} else {
-				document.title = 'Angello';
+				document.title = 'Portafolio de Angello';
 			}
 		};
 		document.addEventListener('visibilitychange', handleVisibilityChange);
@@ -36,7 +36,7 @@ export default function Home() {
 	return (
 		<main className={`${isDarkMode ? 'dark' : ''} dark:text-foreground`}>
 			<Head>
-				<title>Angello</title>
+				<title>Portafolio de Angello</title>
 			</Head>
 			<NavbarUI />
 			<Hero id={navbar[0].url.slice(1)} />

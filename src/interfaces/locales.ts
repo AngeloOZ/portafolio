@@ -22,7 +22,7 @@ export interface Job {
     company:     string;
     period:      string;
     position:    string;
-    description: string;
+    description?:string;
 }
 
 export interface Hero {

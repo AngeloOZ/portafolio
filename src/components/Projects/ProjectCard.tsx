@@ -1,18 +1,23 @@
-import { Project } from '@/interfaces'
-import { Chip, Image } from '@nextui-org/react'
-import { motion } from "framer-motion"
+import { useState } from 'react';
+import { motion } from "framer-motion";
+import { Chip, Image } from '@nextui-org/react';
+
+import { Project } from '@/interfaces';
 
 type Props = {
     project: Project
 }
 
 export const ProjectCard = ({ project }: Props) => {
+    // const [hover, setHover] = useState(false);
+    // console.log(hover);
+    
     return (
         <motion.div
             className="relative overflow-hidden rounded-lg max-w-sm shadow-lg text-black dark:text-white dark:bg-[#181818]"
-            initial={{ transform: "translateX(-100%)" }}
-            animate={{ transform: "translateX(0)" }}
-            // whileHover={{ height: 'auto' }}
+            // animate={{ height: hover ? '100%' : 250 }}
+            // onMouseEnter={() => setHover(true)}
+            // onMouseLeave={() => setHover(false)}
         >
             <Image
                 src={project.image}
