@@ -1,8 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import { Card, CardHeader, Image } from '@nextui-org/react';
+import { Card, CardHeader } from '@nextui-org/react';
 import { Skill } from '@/interfaces';
 import { useContentContex } from '@/context/Content';
+import Image from 'next/image';
 
 interface Props {
     skill: Skill;
@@ -35,7 +36,6 @@ export const SkillCard = ({ skill, setSelectedCard }: Props) => {
                         alt={`logo ${skill.name}`}
                         height={40}
                         width={40}
-                        radius="sm"
                         src={skill.icon}
                     />
                 </CardHeader>

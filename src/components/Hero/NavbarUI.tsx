@@ -15,7 +15,7 @@ export const NavbarUI = () => {
     const { asPath } = useRouter();
 
     return (
-        <Navbar className="bg-background" maxWidth="2xl">
+        <Navbar className="bg-background text-foreground" maxWidth="2xl">
             <NavbarContent className="md:hidden" justify="start">
                 <NavbarMenuToggle />
             </NavbarContent>
@@ -58,10 +58,8 @@ export const NavbarUI = () => {
                 {navbar.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link
+                            color="foreground"
                             className="w-full"
-                            color={
-                                index === 2 ? "warning" : index === navbar.length - 1 ? "danger" : "foreground"
-                            }
                             href={item.url}
                             size="lg"
                         >

@@ -243,7 +243,7 @@
             {
                 "name": "Portafolio",
                 "description": "Portafolio personal",
-                "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                "image": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693345299/Proyectos/hablaplus/principal_paciente.png",
                 "technology": [
                     "React",
                     "TailwindCSS"
@@ -254,7 +254,7 @@
             {
                 "name": "Habla+",
                 "description": "Portafolio personal presasd",
-                "image": "https://nextui.org/images/hero-card-complete.jpeg",
+                "image": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693345299/Proyectos/hablaplus/principal_paciente.png",
                 "technology": [
                     "React",
                     "Next.js",
@@ -272,17 +272,17 @@
         "photo": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693024847/portafolio/hero/IMG-20230312-WA0069_sqtcgy_ac3779.jpg",
         "contacts": {
             "email": {
-                "name": "email",
-                "value": "",
-                "url": "mailto:"
+                "name": "Correo",
+                "value": "angello.ordonez@hotmail.com",
+                "url": "mailto:angello.ordonez@hotmail.com"
             },
             "place": {
-                "name": "place",
+                "name": "Lugar",
                 "value": "Riobamba, Ecuador",
                 "url": ""
             },
             "phone": {
-                "name": "phone",
+                "name": "Teléfono",
                 "value": "+593 98 765 4321",
                 "url": "tel:+593987654321"
             }
