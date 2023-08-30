@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Link from "next/link";
 
 import { promises as fs } from "fs";
 import path from "path";
 
 import { useUIContext, useContentContex } from '@/context';
-import { Hero, Experience, NavbarUI, Skills, Projects } from "@/components";
+import { Hero, Experience, NavbarUI, Skills, Projects, About, Footer } from "@/components";
 import { LandingInfo } from "@/interfaces";
 
 
@@ -43,6 +42,8 @@ export default function Home() {
 			<Experience id={navbar[1].url.slice(1)} />
 			<Skills id={navbar[2].url.slice(1)} />
 			<Projects id={navbar[3].url.slice(1)} />
+			<About id={navbar[4].url.slice(1)} />
+			<Footer />
 		</main>
 	)
 }

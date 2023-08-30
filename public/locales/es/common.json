@@ -267,14 +267,31 @@
             }
         ]
     },
-    "about": [
-        {
-            "title": "Sobre mi",
-            "subtitle": "Sobre mi",
-            "photo": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693024847/portafolio/hero/IMG-20230312-WA0069_sqtcgy_ac3779.jpg",
-            "content": [
-                "Soy un desarrollador de software con 2 años de experiencia en el desarrollo de aplicaciones web y de escritorio, con c"
-            ]
-        }
-    ]
+    "about": {
+        "title": "Sobre mi",
+        "photo": "https://res.cloudinary.com/dzfg3crbt/image/upload/v1693024847/portafolio/hero/IMG-20230312-WA0069_sqtcgy_ac3779.jpg",
+        "contacts": {
+            "email": {
+                "name": "email",
+                "value": "",
+                "url": "mailto:"
+            },
+            "place": {
+                "name": "place",
+                "value": "Riobamba, Ecuador",
+                "url": ""
+            },
+            "phone": {
+                "name": "phone",
+                "value": "+593 98 765 4321",
+                "url": "tel:+593987654321"
+            }
+        },
+        "content": {
+            "name": "Soy Angello",
+            "job": "Ingeniero de Software",
+            "description": "Soy un desarrollador de software con 2 años de experiencia en el desarrollo de aplicaciones web y de escritorio. Me gusta aprender nuevas tecnologias y aplicarlas en mis proyectos. Me gusta trabajar en equipo y compartir mis conocimientos con los demas."
+        },
+        "resume": ""
+    }
 }

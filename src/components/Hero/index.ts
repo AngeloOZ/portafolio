@@ -3,3 +3,4 @@ export { Hero } from './Hero';
 export { HeroText } from './HeroText';
 export { NavbarUI } from './NavbarUI';
 export { HeroAvatar } from './HeroAvatar';
+export { SelectorLanguage } from './SelectorLanguage';
