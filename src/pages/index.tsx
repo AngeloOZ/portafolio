@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { GetStaticProps } from "next";
 import Head from "next/head";
-
-import { promises as fs } from "fs";
-import path from "path";
 
 import { useUIContext, useContentContex } from '@/context';
 import { Hero, Experience, NavbarUI, Skills, Projects, About, Footer } from "@/components";
@@ -15,27 +13,30 @@ interface HomeProps {
 }
 
 export default function Home() {
+	const { locale } = useRouter();
 	const { isDarkMode } = useUIContext();
 	const { navbar } = useContentContex();
 
 	useEffect(() => {
 		const handleVisibilityChange = () => {
 			if (document.hidden) {
-				document.title = 'Regresa por favor 😭👏';
+				const text = locale == 'es' ? 'Regresa por favor 😭👏' : 'Please come back 😭👏';
+				document.title = text;
 			} else {
-				document.title = 'Portafolio de Angello';
+				const text = locale == 'es' ? 'Portafolio de Angello' : 'Angello\'s Portfolio';
+				document.title = text;
 			}
 		};
 		document.addEventListener('visibilitychange', handleVisibilityChange);
 		return () => {
 			document.removeEventListener('visibilitychange', handleVisibilityChange);
 		};
-	}, []);
+	}, [locale]);
 
 	return (
 		<main className={`${isDarkMode ? 'dark' : ''} dark:text-foreground`}>
 			<Head>
-				<title>Portafolio de Angello</title>
+				<title>{locale == 'es' ? 'Portafolio de Angello' : 'Angello\'s Portfolio'}</title>
 			</Head>
 			<NavbarUI />
 			<Hero id={navbar[0].url.slice(1)} />
@@ -50,16 +51,25 @@ export default function Home() {
 
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-	const json = path.join(process.cwd(), `public/locales/es/common.json`)
-	// const json = path.join(process.cwd(), `public/locales/${locale}/common.json`)
-	const data = await fs.readFile(json, { encoding: 'utf8' });
-	const info = JSON.parse(data);
+	const url = `https://raw.githubusercontent.com/AngeloOZ/json/main/portfolio/${locale}/common.json`;
+
+	const request = await fetch(url);
+
+	if (!request.ok) {
+		console.error('Error al obtener la data');
+		return {
+			notFound: true,
+		};
+	}
+
+	const data = await request.json();
+
 
 	return {
 		props: {
-			data: info,
+			data,
 		},
-		revalidate: 10,
+		revalidate: 60 * 60,
 	};
 }
 

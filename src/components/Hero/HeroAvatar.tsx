@@ -21,7 +21,7 @@ export const HeroAvatar = ({ src, alt, classNameWapperImage, classNameImage, ...
                     className={classNameImage}
                     height={500}
                     width={500}
-                    objectFit='cover'
+                    priority
                 />
             </div>
         </div>

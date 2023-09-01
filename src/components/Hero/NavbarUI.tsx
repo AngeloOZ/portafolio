@@ -41,7 +41,7 @@ export const NavbarUI = () => {
             </NavbarContent>
 
             <NavbarContent justify="end">
-                <NavbarItem className="hidden sm:block">
+                <NavbarItem className=" sm:block">
                     <SelectorLanguage />
                 </NavbarItem>
 
@@ -71,4 +71,3 @@ export const NavbarUI = () => {
         </Navbar>
     )
 }
-

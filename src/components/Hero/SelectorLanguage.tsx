@@ -28,14 +28,14 @@ export const SelectorLanguage = () => {
 
     return (
         <div className="flex items-center gap-4">
-            <Dropdown placement="bottom-start">
+            <Dropdown placement="bottom-end">
                 <DropdownTrigger>
-                    <div className="flex items-center cursor-pointer w-[130px]">
+                    <div className="flex items-center cursor-pointer sm:w-[130px]">
                         {
                             currentLang ?
                                 <>
                                     <Avatar src={currentLang.image} size="sm" />
-                                    <span className="font-medium text-sm ml-2 dark:text-white">{currentLang.name}</span>
+                                    <span className="hidden sm:block font-medium text-sm ml-2 dark:text-white">{currentLang.name}</span>
 
                                 </>
                                 :
@@ -55,11 +55,13 @@ export const SelectorLanguage = () => {
                 <DropdownMenu aria-label="languages" variant="flat">
                     {
                         languagesArray.map((lang, index) => (
-                            <DropdownItem key={lang.name} onClick={() => handleLanguageChange(lang)}>
-                                <div className="flex items-center">
-                                    <Avatar src={lang.image} size="sm" />
-                                    <span className="font-medium text-sm ml-2 dark:text-white">{lang.name}</span>
-                                </div>
+                            <DropdownItem
+                                key={lang.name}
+                                onClick={() => handleLanguageChange(lang)}
+                                startContent={<Avatar src={lang.image} size="sm" />}
+                                className="font-medium text-sm ml-2 dark:text-white"
+                            >
+                                {lang.name}
                             </DropdownItem>
                         ))
                     }
